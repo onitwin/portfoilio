@@ -1,5 +1,7 @@
 import React from "react";
 import Project from "../project/Project"
+import Navbar from "../navbar/Navbar"
+import Banner from "../banner/Banner"
 
 const MainContainer=()=>{
 //main container shoould be responsible for all routes and display bar Navbar
@@ -7,7 +9,8 @@ const MainContainer=()=>{
 
   return(
     <div>
-    <h1>Hello from the main container</h1>
+    <Navbar/>
+    <Banner/>
     <Project/>
     </div>
 

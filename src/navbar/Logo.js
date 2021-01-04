@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom"
 
 
 
@@ -7,7 +8,7 @@ const Logo=()=>{
 
 
   return(
-    <h1 className="logo-text">Joseph Sutherland</h1>
+    <h1 className="logo-text"><Link to="/">Joseph Sutherland</Link></h1>
   )
 }
 

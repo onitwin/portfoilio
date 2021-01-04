@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from "react-router-dom";
 
 
 const Navlist=()=>{
@@ -7,10 +8,10 @@ const Navlist=()=>{
   return(
     <div className="Nav-Links-Container">
     <ul className="Nav-links">
-    <li>Portfolio</li>
-    <li>About Me</li>
-    <li>Testimonials</li>
-    <li>Contact</li>
+    <li><Link to="/portfolio">Portfolio</Link></li>
+    <li><Link to="/about">About Me</Link></li>
+    <li><Link to="/testimonials">Testimonials</Link></li>
+    <li><Link to="/contact">Contact</Link></li>
     </ul>
     </div>
   )

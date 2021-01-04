@@ -1,4 +1,6 @@
 import React from 'react';
+import Logo from './Logo';
+import Navlist from './Navlist'
 
 
 
@@ -7,7 +9,11 @@ const Navbar=()=>{
 
 
   return(
-    <h3>Hello from the navbar</h3>
+    <header className="nav-header">
+    <Logo/>
+    <Navlist/>
+
+    </header>
   )
 }
 

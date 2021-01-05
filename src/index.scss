@@ -2,7 +2,7 @@
 
 //variables
 $maintext:#543789;
-$detailColor:gold;
+$detailColor:#FFD700;
 $background:#576675;
 
 //text decoration :none
@@ -55,7 +55,7 @@ body{
 
 //intro
 .intro-container{
-  margin-top: 1rem;
+  // margin-top: 1rem;
   width:100%;
   background:linear-gradient(120deg,#23323D 30%, $detailColor 30%); //angle of inclination+color+end point THEN second color+start point
   display: inline-flex;
@@ -77,7 +77,7 @@ body{
 
 .intro-text-container{
   height:10em;
-  width:70%;
+  width:60%;
   display: inline-flex;
   justify-content:center;
   align-items: center;
@@ -99,11 +99,36 @@ body{
 }
 
 .carousel-container{
-  height:30em;
-  margin-top: 1em;
   display: inline-block;
+  overflow: hidden;
+
 }
 .carousel-image{
   height:30em;
   width:30em;
+  overflow: hidden;
+
+}
+
+.spaceX{
+  height: 30em;
+  width:50em;
+}
+
+.carousel-descriptor-container{
+  display:inline-flex;
+  justify-content: center;
+  align-items: center;
+  width:50%;
+
+  .carousel-descriptor{
+    color: $detailColor;
+    width:30vw;
+
+  }
+}
+
+.carousel-text{
+  color: black;
+  font-weight: bold;
 }

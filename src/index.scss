@@ -1,6 +1,9 @@
 //variables
 $maintext:#543789;
+$detailColor:gold;
 $background:#576675;
+
+//text decoration :none
 
 body{
   background-color: $background;
@@ -29,6 +32,7 @@ body{
     overflow:hidden;
     li{
       list-style: none;
+      background-color: $detailColor;
     }
 
   }
@@ -41,7 +45,7 @@ body{
   background-image: url(https://images.unsplash.com/photo-1553524913-efba3f0b533e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTA3fHxjb2RlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60);
   opacity: 60%;
   .banner-text{
-    color: $maintext;
+    color: $detailColor;
     opacity: 100%;
   }
 }
@@ -51,18 +55,15 @@ body{
 .intro-container{
   margin-top: 1rem;
   width:100%;
-  // height:10em;
-  background:linear-gradient(120deg,#23323D 30%, #6D8191 50%); //angle of inclination+color+end point THEN second color+start point
+  background:linear-gradient(120deg,#23323D 30%, $detailColor 30%); //angle of inclination+color+end point THEN second color+start point
   display: inline-flex;
   justify-content: space-between;
-  // border: 1px solid red;
 }
 
 .intro-image-container{
   width:20%;
   display: inline-flex;
   justify-content: center;
-  // border: 1px solid green;
 }
 
 .profile-image{
@@ -74,14 +75,14 @@ body{
 
 .intro-text-container{
   height:10em;
-  width:80%;
+  width:70%;
   display: inline-flex;
   justify-content:center;
   align-items: center;
+  overflow: scroll;
 
   .intro-text{
     width:40em;
-    // border: 1px solid blue;
     overflow: scroll;
   }
 }

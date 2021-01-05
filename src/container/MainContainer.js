@@ -10,7 +10,7 @@ import Home from "./Home";
 import { BrowserRouter as Router,Route ,Switch} from "react-router-dom";
 
 const MainContainer=()=>{
-//main container shoould be responsible for all routes and display bar Navbar
+//main container shoould be responsible for all routes and display Navbar
 
 
   return(

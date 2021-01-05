@@ -1,6 +1,5 @@
 import React,{Fragment} from 'react';
 import Banner from "../banner/Banner";
-import Project from "../project/Project";
 import Intro from "../intro/Intro";
 
 
@@ -14,7 +13,6 @@ const Home=()=>{
     <Fragment>
     <Banner/>
     <Intro/>
-    <Project/>
     </Fragment>
 
   )

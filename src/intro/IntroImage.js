@@ -5,7 +5,7 @@ import React from 'react'
 const IntroImage=()=>{
 
   return(
-    <p>image goes here</p>
+    <img className="profile-image" src="Images/me.jpeg" alt="Joseph Sutherland"/>
   )
 }
 export default IntroImage;

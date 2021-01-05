@@ -1,5 +1,10 @@
 //variables
 $maintext:#543789;
+$background:#576675;
+
+body{
+  background-color: $background;
+}
 
 //Navbar/Header
 .nav-header{
@@ -39,4 +44,19 @@ $maintext:#543789;
     color: $maintext;
     opacity: 100%;
   }
+}
+
+
+//intro
+.intro-container{
+  margin-top: 1rem;
+  height:10em;
+  background:linear-gradient(120deg,#23323D 30%, #6D8191 50%); //angle of inclination+color+end point THEN second color+start point
+}
+
+.profile-image{
+  width:10em;
+  height: 10em;
+  border-radius: 100px;
+  box-shadow: 5px 5px 15px black;
 }

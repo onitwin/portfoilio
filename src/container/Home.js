@@ -1,6 +1,7 @@
-import React,{Fragment} from 'react'
-import Banner from "../banner/Banner"
-import Project from "../project/Project"
+import React,{Fragment} from 'react';
+import Banner from "../banner/Banner";
+import Project from "../project/Project";
+import Intro from "../intro/Intro";
 
 
 const Home=()=>{
@@ -12,7 +13,7 @@ const Home=()=>{
   return(
     <Fragment>
     <Banner/>
-    <p>Hooooooome</p>
+    <Intro/>
     <Project/>
     </Fragment>
 

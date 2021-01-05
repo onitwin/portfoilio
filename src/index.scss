@@ -1,3 +1,5 @@
+@import "~bootstrap/scss/bootstrap";
+
 //variables
 $maintext:#543789;
 $detailColor:gold;
@@ -85,4 +87,23 @@ body{
     width:40em;
     overflow: scroll;
   }
+}
+
+
+//carousel
+
+.circuit-container{
+  display: inline-flex;
+  justify-content: center;
+  width:100%;
+}
+
+.carousel-container{
+  height:30em;
+  margin-top: 1em;
+  display: inline-block;
+}
+.carousel-image{
+  height:30em;
+  width:30em;
 }

@@ -5,8 +5,9 @@ const Banner=()=>{
 
 
   return (
-    <div>
-    <h1>BANNER IMAGE HERE</h1>
+    <div className="banner-container">
+    <h1 className="banner-text">Software Programmer</h1>
+    <div className="banner-color"></div>
     </div>
 
   )

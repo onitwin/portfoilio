@@ -1,3 +1,6 @@
+//variables
+$maintext:#543789;
+
 //Navbar/Header
 .nav-header{
   width:100%;
@@ -5,7 +8,6 @@
   display: inline-flex;
   justify-content: space-between;
   align-items: baseline;
-  border:1px solid blue;
   .logo-text{
     align-items: baseline;
     font-size: 2em;
@@ -19,6 +21,7 @@
     display:inline-flex;
     width:80%;
     justify-content: space-between;
+    overflow:hidden;
     li{
       list-style: none;
     }
@@ -28,3 +31,12 @@
 
 
 //banner image
+.banner-container{
+  height:40vh;
+  background-image: url(https://images.unsplash.com/photo-1553524913-efba3f0b533e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTA3fHxjb2RlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60);
+  opacity: 60%;
+  .banner-text{
+    color: $maintext;
+    opacity: 100%;
+  }
+}

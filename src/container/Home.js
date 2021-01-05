@@ -5,6 +5,10 @@ import Project from "../project/Project"
 
 const Home=()=>{
 
+
+
+
+
   return(
     <Fragment>
     <Banner/>

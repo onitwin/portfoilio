@@ -5,6 +5,7 @@
 $maintext:#543789;
 $detailColor:#FFD700;
 $background:#576675;
+$darkBackground:#23323D;
 
 //text decoration :none
 
@@ -15,14 +16,15 @@ body{
 //Navbar/Header
 .nav-header{
   width:100%;
-  height:4em;
+  height:8vh;
   display: inline-flex;
   justify-content: space-between;
   align-items: baseline;
   // font-family: 'Source Code Pro', monospace;
   .logo-text{
     align-items: baseline;
-    font-size: 3rem;;
+    font-size: 5vh;
+    font-weight: bold;
     font-family: 'Source Code Pro', monospace;
     color: $detailColor;
   }
@@ -47,7 +49,7 @@ body{
 
 //banner image
 .banner-container{
-  height:40vh;
+  height:20vh;
   background-image: url(https://images.unsplash.com/photo-1553524913-efba3f0b533e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTA3fHxjb2RlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60);
   opacity: 60%;
   .banner-text{
@@ -61,37 +63,38 @@ body{
 .intro-container{
   // margin-top: 1rem;
   width:100%;
-  background:linear-gradient(120deg,#23323D 30%, $detailColor 30%); //angle of inclination+color+end point THEN second color+start point
+  background:linear-gradient(120deg,$darkBackground 30%, $detailColor 30%); //angle of inclination+color+end point THEN second color+start point
   display: inline-flex;
   justify-content: space-between;
-}
-
-.intro-image-container{
-  width:20%;
-  display: inline-flex;
-  justify-content: center;
-}
-
-.profile-image{
-  width:10em;
-  height: 10em;
-  border-radius: 100px;
-  box-shadow: 5px 5px 15px black;
-}
-
-.intro-text-container{
-  height:10em;
-  width:60%;
-  display: inline-flex;
-  justify-content:center;
-  align-items: center;
-  overflow: scroll;
-
-  .intro-text{
-    width:40em;
+  border:1px solid red;
+  .intro-image-container{
+    width:20%;
+    display: inline-flex;
+    justify-content: center;
+    border:1px solid blue;
+  }
+  .profile-image{
+    width:10em;
+    height: 10em;
+    border-radius: 100px;
+    box-shadow: 5px 5px 15px black;
+  }
+  .intro-text-container{
+    height:10em;
+    width:60%;
+    display: inline-flex;
+    justify-content:center;
+    align-items: center;
     overflow: scroll;
-    font-size: 1.5em;
-    font-family: 'Source Code Pro', monospace;
+    border:1px solid blue;
+
+    .intro-text{
+      width:40em;
+      overflow: scroll;
+      font-size:1.5vw;
+      font-family: 'Source Code Pro', monospace;
+      font-weight: bold;
+    }
   }
 }
 
@@ -102,39 +105,35 @@ body{
   display: inline-flex;
   justify-content: center;
   width:100%;
-}
-
-.carousel-container{
-  display: inline-block;
-  overflow: hidden;
-
-}
-.carousel-image{
-  height:30em;
-  width:30em;
-  overflow: hidden;
-
-}
-
-.large{
-  height: 30em;
-  width:50em;
-}
-
-.carousel-descriptor-container{
-  display:inline-flex;
-  justify-content: center;
-  align-items: center;
-  width:50%;
-
-  .carousel-descriptor{
-    color: $detailColor;
-    width:30vw;
+  .carousel-container{
+    display: inline-block;
+    overflow: hidden;
+    .carousel-image{
+      height:30em;
+      width:30em;
+      overflow: hidden;
+    }
+    .large{
+      height: 30em;
+      width:50em;
+    }
+    .carousel-text{
+      color: black;
+      font-weight: bold;
+    }
 
   }
-}
+  .carousel-descriptor-container{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:50%;
 
-.carousel-text{
-  color: black;
-  font-weight: bold;
+    .carousel-descriptor{
+      color: $detailColor;
+      width:30vw;
+
+    }
+  }
+
 }

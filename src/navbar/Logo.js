@@ -8,7 +8,7 @@ const Logo=()=>{
 
 
   return(
-    <h1 className="logo-text"><Link to="/">Joseph Sutherland</Link></h1>
+    <Link to="/"><h1 className="logo-text">Joseph Sutherland</h1></Link>
   )
 }
 

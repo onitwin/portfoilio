@@ -1,4 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,300&display=swap');
 
 //variables
 $maintext:#543789;
@@ -18,9 +19,12 @@ body{
   display: inline-flex;
   justify-content: space-between;
   align-items: baseline;
+  // font-family: 'Source Code Pro', monospace;
   .logo-text{
     align-items: baseline;
-    font-size: 2em;
+    font-size: 3rem;;
+    font-family: 'Source Code Pro', monospace;
+    color: $detailColor;
   }
 
   .Nav-Links-Container{
@@ -86,6 +90,8 @@ body{
   .intro-text{
     width:40em;
     overflow: scroll;
+    font-size: 1.5em;
+    font-family: 'Source Code Pro', monospace;
   }
 }
 

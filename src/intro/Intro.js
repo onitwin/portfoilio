@@ -7,7 +7,7 @@ const Intro=()=>{
 
   return(
     <div className="intro-container">
-    <IntroImage/>
+    <IntroImage />
     <IntroText/>
     </div>
   )

@@ -5,7 +5,10 @@ const Footer=()=>{
 
 
   return (
+    <footer className="style-footer">
+
     <p>hello from the footer</p>
+    </footer>
   )
 }
 

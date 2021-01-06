@@ -13,4 +13,4 @@ export default[
   projectName:"ISS Tracker",
   description:"Fetches positional information for the International Space Station and displays a map of its path in real time",
   image:"Images/iss.jpeg",
-  className:"carousel-image"}]
+  className:"carousel-image large"}]

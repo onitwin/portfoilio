@@ -13,20 +13,24 @@ body{
   background-color: $background;
 }
 
+html{
+  font-size: 100% //to assist with em/rem scaling
+}
+
 //Navbar/Header
 .nav-header{
   width:100%;
-  height:8vh;
   display: inline-flex;
   justify-content: space-between;
   align-items: baseline;
-  // font-family: 'Source Code Pro', monospace;
-  .logo-text{
-    align-items: baseline;
-    font-size: 5vh;
-    font-weight: bold;
-    font-family: 'Source Code Pro', monospace;
-    color: $detailColor;
+  .logo-text-container{
+    .logo-text{
+      font-size: 2em;
+      font-weight: bold;
+      font-family: 'Source Code Pro', monospace;
+      color: $detailColor;
+      padding-left: 1em;
+    }
   }
 
   .Nav-Links-Container{
@@ -39,8 +43,30 @@ body{
     justify-content: space-between;
     overflow:hidden;
     li{
+      height: 2em;
       list-style: none;
       background-color: $detailColor;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      font-weight:bold;
+      font-family: 'Source Code Pro', monospace;
+      border-radius: 20px;
+      padding: 2px;
+      border:3px groove $background;
+      p{
+        padding: 0;
+        margin: 0;
+        color: $background;
+        font-size:1em;
+      }
+    }
+    li:hover{
+      background-color: $background;
+      border: 2px solid $detailColor;
+      p{
+        color: $detailColor;
+      }
     }
 
   }
@@ -55,6 +81,8 @@ body{
   .banner-text{
     color: $detailColor;
     opacity: 100%;
+    font-weight: bold;
+    font-family: 'Source Code Pro', monospace;
   }
 }
 
@@ -66,17 +94,16 @@ body{
   background:linear-gradient(120deg,$darkBackground 30%, $detailColor 30%); //angle of inclination+color+end point THEN second color+start point
   display: inline-flex;
   justify-content: space-between;
-  border:1px solid red;
   .intro-image-container{
     width:20%;
     display: inline-flex;
     justify-content: center;
-    border:1px solid blue;
   }
   .profile-image{
     width:10em;
     height: 10em;
     border-radius: 100px;
+    border: 5px solid $detailColor;
     box-shadow: 5px 5px 15px black;
   }
   .intro-text-container{
@@ -86,12 +113,11 @@ body{
     justify-content:center;
     align-items: center;
     overflow: scroll;
-    border:1px solid blue;
 
     .intro-text{
       width:40em;
       overflow: scroll;
-      font-size:1.5vw;
+      font-size:1.5em;
       font-family: 'Source Code Pro', monospace;
       font-weight: bold;
     }
@@ -114,7 +140,6 @@ body{
       overflow: hidden;
     }
     .large{
-      height: 30em;
       width:50em;
     }
     .carousel-text{
@@ -127,7 +152,7 @@ body{
     display:inline-flex;
     justify-content: center;
     align-items: center;
-    width:50%;
+    width:40%;
 
     .carousel-descriptor{
       color: $detailColor;
@@ -135,5 +160,13 @@ body{
 
     }
   }
+
+}
+
+
+.style-footer{
+  min-height:5vh;
+  width:100%;
+  background:linear-gradient(120deg,$detailColor 30%, $darkBackground 30%);
 
 }

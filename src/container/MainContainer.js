@@ -6,6 +6,7 @@ import Portfolio from "./Portfolio";
 import Testimonials from "./Testimonials";
 import ErrorPage from "./ErrorPage"
 import Home from "./Home";
+import Footer from "./Footer"
 import { BrowserRouter as Router,Route ,Switch} from "react-router-dom";
 
 const MainContainer=()=>{
@@ -25,6 +26,8 @@ const MainContainer=()=>{
       <Route path="/testimonials" component={Testimonials}/>
       <Route component={ErrorPage}/>
       </Switch>
+      <Footer/>
+
     </Fragment>
     </Router>
     </div>

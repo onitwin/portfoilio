@@ -16,8 +16,8 @@ const Circuit=()=>{
           alt={item.projectName}
         />
         <Carousel.Caption>
-          <h3>{item.projectName}</h3>
-          <p className="carousel-text">{item.projectName}</p>
+
+
         </Carousel.Caption>
         </div>
       </Carousel.Item>

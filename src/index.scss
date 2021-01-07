@@ -13,9 +13,17 @@ body{
   background-color: $background;
 }
 
+
 html{
   font-size: 100% //to assist with em/rem scaling
 }
+
+
+.link-class:hover{
+  text-decoration: underline;
+  color: $detailColor;
+}
+
 
 //Navbar/Header
 .nav-header{
@@ -25,7 +33,7 @@ html{
   align-items: baseline;
   .logo-text-container{
     .logo-text{
-      font-size: 2em;
+      font-size: 1.6em;
       font-weight: bold;
       font-family: 'Source Code Pro', monospace;
       color: $detailColor;
@@ -60,6 +68,9 @@ html{
         color: $background;
         font-size:1em;
       }
+      .link-class-list:hover{
+        text-decoration: none;
+      }
     }
     li:hover{
       background-color: $background;
@@ -75,17 +86,13 @@ html{
 
 //banner image
 .banner-container{
-  height:20vh;
-  background-image: url(https://images.unsplash.com/photo-1553524913-efba3f0b533e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTA3fHxjb2RlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60);
-  opacity: 60%;
-  .banner-text{
-    color: $detailColor;
-    opacity: 100%;
-    font-weight: bold;
-    font-family: 'Source Code Pro', monospace;
+  .banner-background{
+    height:20vh;
+    background-image: url(https://images.unsplash.com/photo-1553524913-efba3f0b533e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTA3fHxjb2RlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60);
+    opacity: 0.6;
   }
-}
 
+}
 
 //intro
 .intro-container{
@@ -102,7 +109,7 @@ html{
   .profile-image{
     width:10em;
     height: 10em;
-    border-radius: 100px;
+    border-radius: 200px;
     border: 5px solid $detailColor;
     box-shadow: 5px 5px 15px black;
   }
@@ -117,7 +124,7 @@ html{
     .intro-text{
       width:40em;
       overflow: scroll;
-      font-size:1.5em;
+      font-size:1em;
       font-family: 'Source Code Pro', monospace;
       font-weight: bold;
     }
@@ -129,22 +136,19 @@ html{
 
 .circuit-container{
   display: inline-flex;
-  justify-content: center;
   width:100%;
+  justify-content: center;
   .carousel-container{
-    display: inline-block;
-    overflow: hidden;
+    display: inline-flex;
+    width:44em;
+    justify-content: center;
     .carousel-image{
       height:30em;
       width:30em;
       overflow: hidden;
     }
     .large{
-      width:50em;
-    }
-    .carousel-text{
-      color: black;
-      font-weight: bold;
+      width:44em;
     }
 
   }
@@ -152,12 +156,11 @@ html{
     display:inline-flex;
     justify-content: center;
     align-items: center;
-    width:40%;
+    width:30em;
+    height:30em;
 
     .carousel-descriptor{
       color: $detailColor;
-      width:30vw;
-
     }
   }
 
@@ -170,3 +173,19 @@ html{
   background:linear-gradient(120deg,$detailColor 30%, $darkBackground 30%);
 
 }
+@media screen and (max-width: 600px){
+  html{
+    font-size:80%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .circuit-container{
+    display: inline-block;
+    width:100%;
+    justify-content: center;
+  }
+
+}
+
+//kind of working- needs tweaked

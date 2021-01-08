@@ -187,49 +187,75 @@ html{
 // }
 
 @media screen and (max-width: 600px){
-html{
-  font-size: 75%
-}
-
-.nav-header{
-  .logo-text-container{
-    .logo-text{
-      font-size: 1em;
-   }
- }
-}
-
-.banner-container{
-  .banner-background{
-    height:10vh;
-    background-image: url(https://images.unsplash.com/photo-1553524913-efba3f0b533e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTA3fHxjb2RlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60);
-    opacity: 0.6;
+  html{
+    font-size: 75%
   }
-}
 
-.intro-container{
-  background:linear-gradient(120deg,$darkBackground 40%, $detailColor 40%);
-  .intro-image-container{
-    width:8em;
-    align-items: center;
-    .profile-image{
+  .nav-header{
+    .logo-text-container{
+      .logo-text{
+        font-size: 1em;
+      }
+    }
+  }
+
+  .banner-container{
+    .banner-background{
+      height:10vh;
+      background-image: url(https://images.unsplash.com/photo-1553524913-efba3f0b533e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTA3fHxjb2RlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60);
+      opacity: 0.6;
+    }
+  }
+
+  .intro-container{
+    background:linear-gradient(120deg,$darkBackground 40%, $detailColor 40%);
+    .intro-image-container{
       width:8em;
-      height: 8em;
+      align-items: center;
+      .profile-image{
+        width:8em;
+        height: 8em;
+      }
+    }
+    .intro-text-container{
+      height:8em;
+      width:55%;
+      .intro-text{
+        width:40em;
+        overflow: scroll;
+        font-size:.6em;
+        padding-left: .5em;
+      }
     }
   }
-  .intro-text-container{
-    height:8em;
-    width:55%;
-    .intro-text{
-      width:40em;
-      overflow: scroll;
-      font-size:.6em;
-      padding-left: .5em;
+  .circuit-container{
+    display: inline-block;
+    width:100%;
+    justify-content: center;
+    overflow: hide;
+    .carousel-container{
+      width:100%;
+      .carousel-image{
+        height:18em;
+        width:20em;
+        overflow: hidden;
+      }
+      .large{
+        width:100%;
+      }
     }
+    .carousel-descriptor-container{
+      display:inline-flex;
+      justify-content: center;
+      align-items:flex-start;
+      width:100%;
+      height:auto;
 
-
-
-}
-
-}
+      .carousel-descriptor{
+        color: $detailColor;
+        display:inline-flex;
+        text-align: center;
+      }
+    }
+  }
 }

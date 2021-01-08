@@ -166,12 +166,13 @@ html{
 
     .carousel-descriptor{
       color: $detailColor;
+      width:90%;
     }
   }
 
 }
 
-
+//footer
 .style-footer{
   min-height:5vh;
   width:100%;
@@ -206,11 +207,15 @@ html{
     font-size: 75%
   }
 
+
   .nav-header{
     .logo-text-container{
       .logo-text{
         font-size: 1em;
       }
+    }
+    .Nav-Links-Container{
+      visibility: hidden;
     }
   }
 

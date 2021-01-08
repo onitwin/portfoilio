@@ -105,14 +105,15 @@ html{
     width:20%;
     display: inline-flex;
     justify-content: center;
+    .profile-image{
+      width:10em;
+      height: 10em;
+      border-radius: 200px;
+      border: 5px solid $detailColor;
+      box-shadow: 5px 5px 15px black;
+    }
   }
-  .profile-image{
-    width:10em;
-    height: 10em;
-    border-radius: 200px;
-    border: 5px solid $detailColor;
-    box-shadow: 5px 5px 15px black;
-  }
+
   .intro-text-container{
     height:10em;
     width:60%;
@@ -173,19 +174,62 @@ html{
   background:linear-gradient(120deg,$detailColor 30%, $darkBackground 30%);
 
 }
+
+
+// @media screen and (max-width: 600px){
+//   .circuit-container{
+//     display: inline-block;
+//     width:100%;
+//     justify-content: center;
+//   }
+//
+//
+// }
+
 @media screen and (max-width: 600px){
-  html{
-    font-size:80%;
+html{
+  font-size: 75%
+}
+
+.nav-header{
+  .logo-text-container{
+    .logo-text{
+      font-size: 1em;
+   }
+ }
+}
+
+.banner-container{
+  .banner-background{
+    height:10vh;
+    background-image: url(https://images.unsplash.com/photo-1553524913-efba3f0b533e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTA3fHxjb2RlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60);
+    opacity: 0.6;
   }
 }
 
-@media screen and (max-width: 600px){
-  .circuit-container{
-    display: inline-block;
-    width:100%;
-    justify-content: center;
+.intro-container{
+  background:linear-gradient(120deg,$darkBackground 40%, $detailColor 40%);
+  .intro-image-container{
+    width:8em;
+    align-items: center;
+    .profile-image{
+      width:8em;
+      height: 8em;
+    }
   }
+  .intro-text-container{
+    height:8em;
+    width:55%;
+    .intro-text{
+      width:40em;
+      overflow: scroll;
+      font-size:.6em;
+      padding-left: .5em;
+    }
+
+
 
 }
 
-//kind of working- needs tweaked
+}
+}

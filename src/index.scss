@@ -179,14 +179,19 @@ html{
   background:linear-gradient(120deg,$detailColor 30%, $darkBackground 30%);
   .footer-links-container{
     width:100%;
+    min-height: 5vh;
     display: inline-flex;
     justify-content: flex-end;
-    p{
+    .icon-container{
+      width:30vw;
       display: inline-flex;
+      justify-content: center;
       align-items: center;
-      height:5vh;
-      padding:0;
-      margin:0;
+      .icon{
+        width:1.5em;
+        height:1.5em;
+        margin-left:1em;
+      }
     }
 
 

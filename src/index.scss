@@ -13,6 +13,10 @@ body{
   background-color: $background;
 }
 
+p{
+  color:$detailColor;
+}
+
 
 html{
   font-size: 100% //to assist with em/rem scaling
@@ -125,7 +129,7 @@ html{
     .intro-text{
       width:40em;
       overflow: scroll;
-      font-size:1em;
+      font-size:1.3em;
       font-family: 'Source Code Pro', monospace;
       font-weight: bold;
     }
@@ -172,19 +176,31 @@ html{
   min-height:5vh;
   width:100%;
   background:linear-gradient(120deg,$detailColor 30%, $darkBackground 30%);
+  .footer-links-container{
+    border:1px solid red;
+    width:100%;
+    display: inline-flex;
+    justify-content: flex-end;
+    p{
+      display: inline-flex;
+      align-items: center;
+      height:5vh;
+      padding:0;
+      margin:0;
+    }
+
+
+  }
 
 }
 
+///////////////////////
+///////////////////////
+///////////////////////
+//phone screen layout//
+///////////////////////
+//////////////////////
 
-// @media screen and (max-width: 600px){
-//   .circuit-container{
-//     display: inline-block;
-//     width:100%;
-//     justify-content: center;
-//   }
-//
-//
-// }
 
 @media screen and (max-width: 600px){
   html{

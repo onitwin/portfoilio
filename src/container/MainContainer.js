@@ -6,7 +6,7 @@ import Portfolio from "./Portfolio";
 import Testimonials from "./Testimonials";
 import ErrorPage from "./ErrorPage"
 import Home from "./Home";
-import Footer from "./Footer"
+import Footer from "../footer/Footer"
 import { BrowserRouter as Router,Route ,Switch} from "react-router-dom";
 
 const MainContainer=()=>{

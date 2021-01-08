@@ -1,4 +1,5 @@
 import React from 'react'
+import FooterLinks from "./FooterLinks";
 
 
 const Footer=()=>{
@@ -7,7 +8,7 @@ const Footer=()=>{
   return (
     <footer className="style-footer">
 
-    <p>hello from the footer</p>
+    <FooterLinks/>
     </footer>
   )
 }

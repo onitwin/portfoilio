@@ -159,7 +159,7 @@ html{
   }
   .carousel-descriptor-container{
     display:inline-flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     width:30em;
     height:30em;
@@ -167,6 +167,7 @@ html{
     .carousel-descriptor{
       color: $detailColor;
       width:90%;
+      text-align: center;
     }
   }
 

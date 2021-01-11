@@ -1,16 +1,16 @@
 export default[
   {id:1,
     projectName:"Scroller",
-  description:"Simple app to allow the user to enter text and then display it as scrolling text when they rotate their screen",
+  description:"Simple app to allow the user to enter text and then display it as scrolling text when they rotate their screen- optimised for viewing on phones or via devtools",
   image:"Images/scroller.jpeg",
-  className:"carousel-image"},
+  className:"carousel-image",link:"https://scrollingapp.netlify.app"},
   {id:2,
     projectName:"SpaceX Launcher",
     description:"Fetches data from SpaceX api and displays the details about the launch. Incorporates filter and sort functions",
     image:"Images/spacex.jpeg",
-    className:"carousel-image large"},
+    className:"carousel-image large",link:"https://sutherlandspacex.netlify.app"},
 {id:3,
   projectName:"ISS Tracker",
   description:"Fetches positional information for the International Space Station and displays a map of its path in real time",
   image:"Images/iss.jpeg",
-  className:"carousel-image large"}]
+  className:"carousel-image large",link:"https://sutherland-iss.netlify.app"}]

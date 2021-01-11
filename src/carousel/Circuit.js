@@ -10,11 +10,11 @@ const Circuit=()=>{
     return(
       <Carousel.Item key={item.id}>
       <div className="carousel-internal-block">
-        <img
+        <a href={item.link}><img
           className={item.className}
           src={item.image}
           alt={item.projectName}
-        />
+        /></a>
         <Carousel.Caption>
 
 

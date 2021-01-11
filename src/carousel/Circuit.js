@@ -24,6 +24,16 @@ const Circuit=()=>{
     )
   })
 
+  const descriptionMap=items.map((item,key)=>{
+    return(
+      <div className="carousel-descriptor-container">
+      <div className="carousel-descriptor" >
+      <h2>{item.description}</h2>
+      </div>
+      </div>
+    )
+  })
+
   const [index, setIndex] = useState(0);
 
   const handleSelect=(selectedIndex,e)=>{
@@ -38,11 +48,11 @@ const Circuit=()=>{
     {projectsMap}
     </Carousel>
     </div>
-    <div className="carousel-descriptor-container">
+    {<div className="carousel-descriptor-container">
     <div className="carousel-descriptor" >
-    <h2>These are some of the projects I have been working on recently</h2>
+    <h2>{items[index].description}</h2>
     </div>
-    </div>
+    </div>}
     </div>
   )
 }

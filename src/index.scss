@@ -28,7 +28,6 @@ html{
   color: $detailColor;
 }
 
-
 //Navbar/Header
 .nav-header{
   width:100%;
@@ -199,6 +198,44 @@ html{
   }
 
 }
+/////////////////
+////////////////
+//portfolio page//
+////////////////
+///////////////
+
+.portfolio-container{
+  .portfolio-header-wrapper{
+    width:100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+
+    .portfolio-header{
+      color:$detailColor;
+    }
+  }
+  .portfolio-description-wrapper{
+    display: flex;
+    justify-content: center;
+    border:1px solid blue;
+    .portfolio-description{
+      color: $detailColor;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
 
 ///////////////////////
 ///////////////////////

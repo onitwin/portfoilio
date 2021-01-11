@@ -7,11 +7,12 @@ import Testimonials from "./Testimonials";
 import ErrorPage from "./ErrorPage"
 import Home from "./Home";
 import Footer from "../footer/Footer"
+import items from "../data";
 import { BrowserRouter as Router,Route ,Switch} from "react-router-dom";
 
 const MainContainer=()=>{
 //main container shoould be responsible for all routes and display Navbar
-
+console.log(items)
 
   return(
     <div>
@@ -19,10 +20,10 @@ const MainContainer=()=>{
     <Fragment>
       <Navbar/>
       <Switch>
-      <Route exact path="/" component={Home}/>
+      <Route exact path="/" render={(props)=>{return <Home items={items}/>}}/>
       <Route path="/about" component={AboutMe}/>
       <Route path="/contact" component={Contact}/>
-      <Route path="/portfolio" component={Portfolio}/>
+      <Route path="/portfolio" render={(props)=>{return <Portfolio items={items}/>}}/>
       <Route path="/testimonials" component={Testimonials}/>
       <Route component={ErrorPage}/>
       </Switch>

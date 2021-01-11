@@ -4,8 +4,8 @@ import Intro from "../intro/Intro";
 import Circuit from "../carousel/Circuit";
 
 
-const Home=()=>{
-
+const Home=({items})=>{
+console.log(items)
 
 
 
@@ -14,7 +14,7 @@ const Home=()=>{
     <Fragment>
     <Banner/>
     <Intro/>
-    <Circuit/>
+    <Circuit items={items}/>
     </Fragment>
 
   )

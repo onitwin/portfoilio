@@ -1,8 +1,9 @@
 import React from 'react'
-import Project from "../project/Project"
+import Projects from "../project/Projects"
 
 
-const Portfolio=()=>{
+const Portfolio=({items})=>{
+
 
 
   return(
@@ -13,7 +14,8 @@ const Portfolio=()=>{
     <div className="portfolio-description-wrapper">
     <h2 className="portfolio-description">Below are a few of my most recent or favourite projects</h2>
     </div>
-    <Project/>
+    <Projects items={items}/>
+
     </div>
   )
 }

@@ -206,11 +206,11 @@ html{
 
 .portfolio-container{
   .portfolio-header-wrapper{
+    background:linear-gradient(120deg,$darkBackground 30%, $detailColor 30%);
     width:100%;
     display: inline-flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    border: 1px solid red;
 
     .portfolio-header{
       color:$detailColor;
@@ -219,13 +219,24 @@ html{
   .portfolio-description-wrapper{
     display: flex;
     justify-content: center;
-    border:1px solid blue;
     .portfolio-description{
       color: $detailColor;
     }
   }
 
 }
+
+
+.project-container-inner{
+  .title-container{
+    .project-title{
+      color:$detailColor;
+      font-size: 2em;
+    }
+  }
+  .project-details-container{}
+}
+
 
 
 
@@ -321,4 +332,26 @@ html{
       }
     }
   }
+
+  .portfolio-container{
+    .portfolio-header-wrapper{
+      background:linear-gradient(120deg,$darkBackground 70%, $detailColor 70%);
+      .portfolio-header{
+        color:$detailColor;
+        font-size: 2em;
+      }
+    }
+
+    .portfolio-description-wrapper{
+      display: flex;
+      justify-content: center;
+      .portfolio-description{
+        color: $detailColor;
+        text-align: center;
+      }
+    }
+
+  }
+
+
 }

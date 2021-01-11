@@ -1,10 +1,8 @@
 import React,{useState} from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import items from "../data";
 
 
-
-const Circuit=()=>{
+const Circuit=({items})=>{
 
   const projectsMap=items.map((item,key)=>{
     return(

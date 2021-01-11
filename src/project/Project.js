@@ -1,14 +1,22 @@
 import React from 'react';
 
 
-const Project=()=>{
+const Project=({item})=>{
   //individual project. responsible for arrangement of each project in portfilio
 
 
 
 
   return(
-    <h4>Hello from the Project component</h4>
+    <div className="project-container-inner">
+    <div className="title-container">
+    <h3 className="project-title">{item.projectName}</h3>
+    </div>
+    <div className="project-details-container">
+    <img className={item.className} src={item.image}/>
+
+    </div>
+    </div>
   )
 }
 

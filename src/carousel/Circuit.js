@@ -5,11 +5,13 @@ import Carousel from 'react-bootstrap/Carousel';
 const Circuit=({items})=>{
 
   const projectsMap=items.map((item,key)=>{
+    const newClassName="carousel-image "+item.className
     return(
       <Carousel.Item key={item.id}>
       <div className="carousel-internal-block">
         <a href={item.link}><img
-          className={item.className}
+          className={newClassName}
+
           src={item.image}
           alt={item.projectName}
         /></a>

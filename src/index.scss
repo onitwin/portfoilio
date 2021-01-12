@@ -207,7 +207,6 @@ html{
 .portfolio-container{
   display: block;
   .portfolio-header-wrapper{
-    border:1px solid green;
     background:linear-gradient(120deg,$darkBackground 30%, $detailColor 30%);
     width:100%;
     display: inline-flex;
@@ -230,6 +229,8 @@ html{
 
 
 .project-container-inner{
+  background-color: $darkBackground;
+  margin-bottom: 2em;
   display: inline-block;
   width:100%;
   height:32em;
@@ -241,11 +242,17 @@ html{
       width:50%;
       display: block;
       .title-container{
+        text-decoration: none;
         display: flex;
         justify-content: center;
         align-items:center;
         width:100%;
-        color: $detailColor;
+        a{
+          h3{
+            color: $detailColor;
+          }
+        }
+
       }
       .project-image-inner{
         width:100%;
@@ -268,16 +275,35 @@ html{
       width:50%;
       color: $detailColor;
       article{
+        padding-left: 1em;
         display: flex;
         justify-content:center;
-        align-items:center;
+        align-items:flex-end;
+        overflow: scroll;
         height:50%;
         width:100%;
         color: $detailColor;
-        font-size: 1em;
+        font-size: 1.3em;
       }
       .tech-stack-container{
         height:50%;
+        .tech-stack-descriptor{
+          display:inline-flex;
+          justify-content: space-between;
+          background:linear-gradient(120deg,$darkBackground 30%, $detailColor 30%);
+          width:100%;
+          .tech-stack-textbox{
+            padding-left:1em;
+          }
+          .tech-stack-icons-container{
+            display: inline-flex;
+            justify-content: space-around;
+            width:50%;
+            color: red;
+          }
+
+        }
+
       }
     }
   }

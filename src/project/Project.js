@@ -20,8 +20,10 @@ const Project=({item})=>{
     </div>
     </div>
     <div className="project-description-container">
-    <article><p>text goes here</p></article>
-    <div className="tech-stack-container">Tech Stack:</div>
+    <article><p>text goes here </p></article>
+    <div className="tech-stack-container">
+    <h2>Tech Stack: icons for tech goes here;</h2>
+    </div>
     </div>
 
     </div>

@@ -265,19 +265,19 @@ html{
     }
     .project-description-container{
       display: block;
-      border:1px solid green;
       width:50%;
       color: $detailColor;
       article{
+        display: flex;
+        justify-content:center;
+        align-items:center;
         height:50%;
         width:100%;
         color: $detailColor;
-        border: 1px solid red;
         font-size: 1em;
       }
       .tech-stack-container{
         height:50%;
-        border:1px solid blue;;
       }
     }
   }

@@ -1,11 +1,12 @@
 import React from 'react';
+import IconGenerate from "./IconGenerate"
 
 
 const Project=({item})=>{
   //individual project. responsible for arrangement of each project in portfilio
 
 
-
+  
 
   return(
     <div className="project-container-inner">
@@ -17,7 +18,7 @@ const Project=({item})=>{
     <a href={item.link}><h3 className="project-title">{item.projectName}</h3></a>
     </div>
     <div className="project-image-inner">
-    <img className={item.className} src={item.image}/>
+    <a href={item.link}><img className={item.className} src={item.image}/></a>
     </div>
     </div>
     <div className="project-description-container">
@@ -28,8 +29,7 @@ const Project=({item})=>{
     <h2>Tech Stack</h2>
     </div>
     <div className="tech-stack-icons-container">
-    <h2>hello</h2>
-    <h2>Hi</h2>
+    <IconGenerate item={item}/>
     </div>
     </div>
     </div>

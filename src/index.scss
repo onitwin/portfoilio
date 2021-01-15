@@ -304,11 +304,23 @@ html{
             padding-left:.5em;
           }
           .tech-stack-icons-container{
+            border:1px solid red;
             display: inline-flex;
             justify-content: space-around;
             align-items: center;
             width:50%;
             color: red;
+            .icon-container{
+              display: inline-flex;
+              justify-content: space-between;
+              align-items: center;
+              .icon-image{
+                width:1em;
+                height:1em;
+                margin:.5em;
+              }
+
+            }
           }
 
         }

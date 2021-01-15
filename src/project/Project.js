@@ -6,7 +6,7 @@ const Project=({item})=>{
   //individual project. responsible for arrangement of each project in portfilio
 
 
-  
+
 
   return(
     <div className="project-container-inner">

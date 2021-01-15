@@ -24,15 +24,7 @@ const Circuit=({items})=>{
     )
   })
 
-  const descriptionMap=items.map((item,key)=>{
-    return(
-      <div className="carousel-descriptor-container">
-      <div className="carousel-descriptor" >
-      <h2>{item.description}</h2>
-      </div>
-      </div>
-    )
-  })
+
 
   const [index, setIndex] = useState(0);
 

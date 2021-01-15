@@ -12,7 +12,6 @@ import { BrowserRouter as Router,Route ,Switch} from "react-router-dom";
 
 const MainContainer=()=>{
 //main container shoould be responsible for all routes and display Navbar
-console.log(items)
 
   return(
     <div>

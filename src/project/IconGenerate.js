@@ -5,9 +5,9 @@ const IconGenerate=({item})=>{
 console.log(item.techstack)
 
 const stack=item.techstack.map((logo,key)=>{
-  console.log(logo)
+  const route=`/images/${logo}.png`
   return(
-    <img className="icon-image" src="/images/javascript.jpg" alt={logo} key={logo.index}/>
+    <img className="icon-image" src={route} alt={logo} key={logo.index}/>
   )
 })
 

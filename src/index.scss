@@ -33,7 +33,7 @@ html{
   width:100%;
   display: inline-flex;
   justify-content: space-between;
-  align-items: baseline;
+  // align-items: baseline;
   .logo-text-container{
     .logo-text{
       font-size: 1.6em;
@@ -46,6 +46,9 @@ html{
 
   .Nav-Links-Container{
     width:50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .Nav-links{
@@ -285,6 +288,7 @@ html{
         width:100%;
         color: $detailColor;
         font-size: 1.3em;
+
       }
       .tech-stack-container{
         height:50%;
@@ -297,11 +301,12 @@ html{
           width:100%;
           height:3em;
           .tech-stack-textbox{
-            padding-left:1em;
+            padding-left:.5em;
           }
           .tech-stack-icons-container{
             display: inline-flex;
             justify-content: space-around;
+            align-items: center;
             width:50%;
             color: red;
           }
@@ -424,7 +429,6 @@ html{
     }
     .portfolio-description{
       text-align: center;
-      color: $detailColor;
       font-size:1.5em;
       padding: .1em;
     }
@@ -433,7 +437,7 @@ html{
   .project-container-inner{
     margin-bottom: 2em;
     width:100%;
-    height:40em;
+    height:auto;
     .project-details-container{
       display:block;
       width:100%;
@@ -472,7 +476,6 @@ html{
         }
       }
       .project-description-container{
-        border:1px solid blue;
         display: block;
         width:100%;
         color: $detailColor;
@@ -481,27 +484,28 @@ html{
           display: flex;
           justify-content:center;
           align-items:flex-end;
-          height:50%;
+          height:auto;
           width:100%;
           color: $detailColor;
           font-size: 1.3em;
         }
         .tech-stack-container{
-          height:50%;
+          height:auto;
           display: flex;
           align-items:center;
           .tech-stack-descriptor{
             display:inline-flex;
             justify-content: space-between;
-            background:linear-gradient(120deg,$darkBackground 30%, $detailColor 30%);
+            background:linear-gradient(120deg,$darkBackground 50%, $detailColor 50%);
             width:100%;
             height:3em;
             .tech-stack-textbox{
-              padding-left:1em;
+              text-align: center;
             }
             .tech-stack-icons-container{
               display: inline-flex;
               justify-content: space-around;
+              align-items: center;
               width:50%;
               color: red;
             }

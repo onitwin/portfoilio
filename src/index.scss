@@ -317,7 +317,6 @@ html{
               .icon-image{
                 width:2.5em;
                 height:2.1em;
-                // margin:.5em;
               }
 
             }
@@ -476,7 +475,7 @@ html{
           width:100%;
           a{
             .small{
-              width:30em;
+              width:100%;
             }
             .large{
               width:100%;
@@ -520,6 +519,13 @@ html{
               align-items: center;
               width:50%;
               color: red;
+              .icon-container{
+                .icon-image{
+                  width:1.8em;
+                  height:1.3em;
+                }
+              }
+
             }
 
           }

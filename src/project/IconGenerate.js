@@ -2,7 +2,6 @@ import React from 'react'
 
 
 const IconGenerate=({item})=>{
-console.log(item.techstack)
 
 const stack=item.techstack.map((logo,key)=>{
   const route=`/images/${logo}.png`

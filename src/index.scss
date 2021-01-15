@@ -295,6 +295,7 @@ html{
         display: flex;
         align-items:center;
         .tech-stack-descriptor{
+          border: 1px solid $detailColor;
           display:inline-flex;
           justify-content: space-between;
           background:linear-gradient(120deg,$darkBackground 30%, $detailColor 30%);
@@ -446,6 +447,7 @@ html{
   }
 
   .project-container-inner{
+    border-top: 1px solid $detailColor;
     margin-bottom: 2em;
     width:100%;
     height:auto;

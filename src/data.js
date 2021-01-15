@@ -25,4 +25,5 @@ export default[
   className:"large",
   link:"https://sutherland-iss.netlify.app",
   techstack:["Javascript","React","Sass","NodeJs"],
-  githubLink:"https://github.com/onitwin/isstracker"}]
+  githubLink:"https://github.com/onitwin/isstracker"}
+]

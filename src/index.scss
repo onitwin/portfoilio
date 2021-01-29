@@ -1,6 +1,7 @@
 @import "~bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,300&display=swap');
 
+//global elements
 //variables
 $maintext:#543789;
 $detailColor:#FFD700;
@@ -60,117 +61,5 @@ html{
 @media screen and (max-width: 600px){
   html{
     font-size: 75%
-  }
-
-  ////////portfolio page//////////////
-
-  .portfolio-container{
-    display: block;
-    .portfolio-header-wrapper{
-      background:linear-gradient(120deg,$darkBackground 60%, $detailColor 60%);
-      justify-content: flex-start;
-      .portfolio-header{
-        margin-bottom:.2em;
-        padding-left: .2em;
-        font-size: 1.2em;
-        font-weight: bold;
-      }
-    }
-    .portfolio-description{
-      text-align: center;
-      font-size:1.5em;
-      padding: .1em;
-    }
-  }
-
-  .project-container-inner{
-    border-top: 1px solid $detailColor;
-    margin-bottom: 2em;
-    width:100%;
-    height:auto;
-    .project-details-container{
-      display:block;
-      width:100%;
-      height: auto;
-      .project-image-container{
-        width:100%;
-        display: block;
-        .title-container{
-          text-decoration: none;
-          display: flex;
-          justify-content: center;
-          align-items:center;
-          width:100%;
-          a{
-            text-decoration:none;
-            color: $detailColor;
-            h3{
-              color: $detailColor;
-            }
-          }
-
-        }
-        .project-image-inner{
-          width:100%;
-          a{
-            .small{
-              width:100%;
-            }
-            .large{
-              width:100%;
-              height:18em;
-            }
-
-          }
-
-        }
-      }
-      .project-description-container{
-        display: block;
-        width:100%;
-        color: $detailColor;
-        article{
-          padding: 1em;
-          display: flex;
-          justify-content:center;
-          align-items:flex-end;
-          height:auto;
-          width:100%;
-          color: $detailColor;
-          font-size: 1.3em;
-        }
-        .tech-stack-container{
-          height:auto;
-          display: flex;
-          align-items:center;
-          .tech-stack-descriptor{
-            display:inline-flex;
-            justify-content: space-between;
-            background:linear-gradient(120deg,$darkBackground 50%, $detailColor 50%);
-            width:100%;
-            height:3em;
-            .tech-stack-textbox{
-              text-align: center;
-            }
-            .tech-stack-icons-container{
-              display: inline-flex;
-              justify-content: space-around;
-              align-items: center;
-              width:50%;
-              color: red;
-              .icon-container{
-                .icon-image{
-                  width:1.8em;
-                  height:1.3em;
-                }
-              }
-
-            }
-
-          }
-
-        }
-      }
-    }
   }
 }

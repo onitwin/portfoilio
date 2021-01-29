@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from './Logo';
 import Navlist from './Navlist'
+import './navbarstyle.scss'
 
 
 

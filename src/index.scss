@@ -28,116 +28,6 @@ html{
   color: $detailColor;
 }
 
-//Navbar/Header
-.nav-header{
-  width:100%;
-  display: inline-flex;
-  justify-content: space-between;
-  // align-items: baseline;
-  .logo-text-container{
-    .logo-text{
-      font-size: 1.6em;
-      font-weight: bold;
-      font-family: 'Source Code Pro', monospace;
-      color: $detailColor;
-      padding-left: 1em;
-    }
-  }
-
-  .Nav-Links-Container{
-    width:50%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .Nav-links{
-    display:inline-flex;
-    width:80%;
-    justify-content: space-between;
-    overflow:hidden;
-    li{
-      height: 2em;
-      list-style: none;
-      background-color: $detailColor;
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      font-weight:bold;
-      font-family: 'Source Code Pro', monospace;
-      border-radius: 20px;
-      padding: 2px;
-      border:3px groove $background;
-      p{
-        padding: 0;
-        margin: 0;
-        color: $background;
-        font-size:1em;
-      }
-      .link-class-list:hover{
-        text-decoration: none;
-      }
-    }
-    li:hover{
-      background-color: $background;
-      border: 2px solid $detailColor;
-      p{
-        color: $detailColor;
-      }
-    }
-
-  }
-}
-
-
-//banner image
-.banner-container{
-  .banner-background{
-    height:20vh;
-    background-image: url(https://images.unsplash.com/photo-1553524913-efba3f0b533e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTA3fHxjb2RlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60);
-    opacity: 0.6;
-  }
-
-}
-
-//intro
-.intro-container{
-  // margin-top: 1rem;
-  width:100%;
-  background:linear-gradient(120deg,$darkBackground 30%, $detailColor 30%); //angle of inclination+color+end point THEN second color+start point
-  display: inline-flex;
-  justify-content: space-between;
-  .intro-image-container{
-    width:20%;
-    display: inline-flex;
-    justify-content: center;
-    .profile-image{
-      width:10em;
-      height: 10em;
-      border-radius: 200px;
-      border: 5px solid $detailColor;
-      box-shadow: 5px 5px 15px black;
-    }
-  }
-
-  .intro-text-container{
-    height:10em;
-    width:60%;
-    display: inline-flex;
-    justify-content:center;
-    align-items: center;
-    overflow: scroll;
-
-    .intro-text{
-      width:40em;
-      overflow: scroll;
-      font-size:1.3em;
-      font-family: 'Source Code Pro', monospace;
-      font-weight: bold;
-    }
-  }
-}
-
 
 //carousel
 
@@ -352,18 +242,6 @@ html{
 @media screen and (max-width: 600px){
   html{
     font-size: 75%
-  }
-
-
-  .nav-header{
-    .logo-text-container{
-      .logo-text{
-        font-size: 1em;
-      }
-    }
-    .Nav-Links-Container{
-      visibility: hidden;
-    }
   }
 
   .banner-container{

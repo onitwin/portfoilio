@@ -1,0 +1,21 @@
+@import '../index.scss';
+//banner image
+.banner-container{
+  .banner-background{
+    height:20vh;
+    background-image: url(https://images.unsplash.com/photo-1553524913-efba3f0b533e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTA3fHxjb2RlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60);
+    opacity: 0.6;
+  }
+
+}
+
+@media screen and (max-width: 600px){
+
+  .banner-container{
+    .banner-background{
+      height:10vh;
+      background-image: url(https://images.unsplash.com/photo-1553524913-efba3f0b533e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTA3fHxjb2RlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60);
+      opacity: 0.6;
+    }
+  }
+}

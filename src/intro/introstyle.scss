@@ -36,3 +36,28 @@
     }
   }
 }
+
+@media screen and (max-width: 600px){
+
+  .intro-container{
+    background:linear-gradient(120deg,$darkBackground 40%, $detailColor 40%);
+    .intro-image-container{
+      width:8em;
+      align-items: center;
+      .profile-image{
+        width:8em;
+        height: 8em;
+      }
+    }
+    .intro-text-container{
+      height:8em;
+      width:55%;
+      .intro-text{
+        width:40em;
+        overflow: scroll;
+        font-size:.6em;
+        padding-left: .5em;
+      }
+    }
+  }
+}

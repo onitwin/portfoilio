@@ -1,0 +1,237 @@
+@import '../index.scss';
+
+.portfolio-container{
+  display: block;
+  .portfolio-header-wrapper{
+    background:linear-gradient(120deg,$darkBackground 30%, $detailColor 30%);
+    width:100%;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .portfolio-header{
+      color:$detailColor;
+    }
+  }
+  .portfolio-description{
+    color: $detailColor;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+.project-container-inner{
+  background-color: $darkBackground;
+  margin-bottom: 2em;
+  display: inline-block;
+  width:100%;
+  height:32em;
+  .project-details-container{
+    display: inline-flex;
+    width:100%;
+    height:32em;
+    .project-image-container{
+      width:50%;
+      display: block;
+      .title-container{
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        width:100%;
+        a{
+          text-decoration:none;
+          color: $detailColor;
+          h3{
+            color: $detailColor;
+          }
+        }
+
+      }
+      .project-image-inner{
+        width:100%;
+        height:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+          .small{
+            width:30em;
+          }
+          .large{
+            width:40em;
+            height:25em;
+          }
+
+        }
+
+      }
+    }
+    .project-description-container{
+      display: block;
+      width:50%;
+      color: $detailColor;
+      article{
+        padding: 1em;
+        display: flex;
+        justify-content:center;
+        align-items:flex-end;
+        height:50%;
+        width:100%;
+        color: $detailColor;
+        font-size: 1.3em;
+
+      }
+      .tech-stack-container{
+        height:50%;
+        display: flex;
+        align-items:center;
+        .tech-stack-descriptor{
+          border: 1px solid $detailColor;
+          display:inline-flex;
+          justify-content: space-between;
+          background:linear-gradient(120deg,$darkBackground 30%, $detailColor 30%);
+          width:100%;
+          height:3em;
+          .tech-stack-textbox{
+            padding-left:.5em;
+          }
+          .tech-stack-icons-container{
+            display: inline-flex;
+            justify-content: space-around;
+            align-items: center;
+            width:50%;
+            color: red;
+            .icon-container{
+              width:100%;
+              display: inline-flex;
+              justify-content: space-around;
+              align-items: center;
+              .icon-image{
+                width:2.5em;
+                height:2.1em;
+              }
+
+            }
+          }
+
+        }
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px){
+
+  .portfolio-container{
+    display: block;
+    .portfolio-header-wrapper{
+      background:linear-gradient(120deg,$darkBackground 60%, $detailColor 60%);
+      justify-content: flex-start;
+      .portfolio-header{
+        margin-bottom:.2em;
+        padding-left: .2em;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+    }
+    .portfolio-description{
+      text-align: center;
+      font-size:1.5em;
+      padding: .1em;
+    }
+  }
+
+  .project-container-inner{
+    border-top: 1px solid $detailColor;
+    margin-bottom: 2em;
+    width:100%;
+    height:auto;
+    .project-details-container{
+      display:block;
+      width:100%;
+      height: auto;
+      .project-image-container{
+        width:100%;
+        display: block;
+        .title-container{
+          text-decoration: none;
+          display: flex;
+          justify-content: center;
+          align-items:center;
+          width:100%;
+          a{
+            text-decoration:none;
+            color: $detailColor;
+            h3{
+              color: $detailColor;
+            }
+          }
+
+        }
+        .project-image-inner{
+          width:100%;
+          a{
+            .small{
+              width:100%;
+            }
+            .large{
+              width:100%;
+              height:18em;
+            }
+
+          }
+
+        }
+      }
+      .project-description-container{
+        display: block;
+        width:100%;
+        color: $detailColor;
+        article{
+          padding: 1em;
+          display: flex;
+          justify-content:center;
+          align-items:flex-end;
+          height:auto;
+          width:100%;
+          color: $detailColor;
+          font-size: 1.3em;
+        }
+        .tech-stack-container{
+          height:auto;
+          display: flex;
+          align-items:center;
+          .tech-stack-descriptor{
+            display:inline-flex;
+            justify-content: space-between;
+            background:linear-gradient(120deg,$darkBackground 50%, $detailColor 50%);
+            width:100%;
+            height:3em;
+            .tech-stack-textbox{
+              text-align: center;
+            }
+            .tech-stack-icons-container{
+              display: inline-flex;
+              justify-content: space-around;
+              align-items: center;
+              width:50%;
+              color: red;
+              .icon-container{
+                .icon-image{
+                  width:1.8em;
+                  height:1.3em;
+                }
+              }
+
+            }
+
+          }
+
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@import '../index.scss';
+
+.circuit-container{
+  display: inline-flex;
+  width:100%;
+  justify-content: center;
+  .carousel-container{
+    display: inline-flex;
+    width:44em;
+    justify-content: center;
+    .carousel-image{
+      height:30em;
+      width:30em;
+      overflow: hidden;
+    }
+    .large{
+      width:44em;
+    }
+
+  }
+  .carousel-descriptor-container{
+    display:inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    width:30em;
+    height:30em;
+
+    .carousel-descriptor{
+      color: $detailColor;
+      width:90%;
+      text-align: center;
+    }
+  }
+
+}
+
+@media screen and (max-width: 600px){
+.circuit-container{
+  display: inline-block;
+  width:100%;
+  justify-content: center;
+  overflow: hide;
+  .carousel-container{
+    width:100%;
+    .carousel-image{
+      height:18em;
+      width:20em;
+      overflow: hidden;
+    }
+    .large{
+      width:100%;
+    }
+  }
+  .carousel-descriptor-container{
+    display:inline-flex;
+    justify-content: center;
+    align-items:flex-start;
+    width:100%;
+    height:auto;
+
+    .carousel-descriptor{
+      color: $detailColor;
+      display:inline-flex;
+      text-align: center;
+    }
+  }
+}
+}

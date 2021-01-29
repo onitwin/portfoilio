@@ -1,0 +1,27 @@
+@import '../index.scss';
+//footer
+.style-footer{
+  min-height:5vh;
+  width:100%;
+  background:linear-gradient(120deg,$detailColor 30%, $darkBackground 30%);
+  .footer-links-container{
+    width:100%;
+    min-height: 5vh;
+    display: inline-flex;
+    justify-content: flex-end;
+    .icon-container{
+      width:30vw;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      .icon{
+        width:1.5em;
+        height:1.5em;
+        margin-left:1em;
+      }
+    }
+
+
+  }
+
+}

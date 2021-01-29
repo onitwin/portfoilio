@@ -1,5 +1,6 @@
 import React from 'react'
 import FooterLinks from "./FooterLinks";
+import './footerstyle.scss'
 
 
 const Footer=()=>{

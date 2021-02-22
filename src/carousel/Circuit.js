@@ -12,7 +12,6 @@ const Circuit=({items})=>{
       <div className="carousel-internal-block">
         <a href={item.link}><img
           className={newClassName}
-
           src={item.image}
           alt={item.projectName}
         /></a>

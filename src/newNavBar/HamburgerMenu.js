@@ -5,7 +5,7 @@ const HamburgerMenu=()=>{
 
   const menuInvert=()=>{
     const burger = document.querySelector('.hamburger-icon');
-    const nav = document.querySelector('.nav-header');
+    const nav = document.querySelector('.nav-links');
     burger.addEventListener('click', ()=>{
         nav.classList.toggle('show')
     })

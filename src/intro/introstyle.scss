@@ -28,9 +28,13 @@
     overflow: scroll;
 
     .intro-text{
+      text-align: center;
+      margin-top: auto;
+      margin-bottom: auto;
       width:40em;
+      max-height: 9em;
       overflow: scroll;
-      font-size:1.3em;
+      font-size:1em;
       font-family: 'Source Code Pro', monospace;
       font-weight: bold;
     }
@@ -55,7 +59,7 @@
       .intro-text{
         width:40em;
         overflow: scroll;
-        font-size:.6em;
+        font-size:.9em;
         padding-left: .5em;
       }
     }

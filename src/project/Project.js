@@ -18,7 +18,7 @@ const Project=({item})=>{
     <a href={item.link}><h3 className="project-title">{item.projectName}</h3></a>
     </div>
     <div className="project-image-inner">
-    <a href={item.link}><img className={item.className} src={item.image}/></a>
+    <a href={item.link}><img className={item.className} alt={item.alt} src={item.image}/></a>
     </div>
     </div>
     <div className="project-description-container">

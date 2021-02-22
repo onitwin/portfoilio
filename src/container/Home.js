@@ -5,10 +5,6 @@ import Circuit from "../carousel/Circuit";
 
 
 const Home=({items})=>{
-console.log(items)
-
-
-
 
   return(
     <Fragment>

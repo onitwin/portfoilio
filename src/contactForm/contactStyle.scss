@@ -1,0 +1,37 @@
+@import '../index.scss';
+
+.contact-container{
+  display: block;
+  .contact-header-wrapper{
+    width:100%;
+    background:linear-gradient(120deg,$darkBackground 30%, $detailColor 30%);
+    .contact-page-header{
+      color: $detailColor;
+    }
+  }
+  .contact-description{
+    width:80%;
+    color: $detailColor;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .contact-form-wrapper{
+    display: block;
+    .formDiv{
+      display: block;
+      padding:1em;
+      border-radius: 20px;
+      border:1px $darkBackground groove;
+      margin-left: auto;
+      margin-right:auto;
+      width:50%;
+      background-color: $detailColor;
+    }
+  }
+
+
+
+
+}

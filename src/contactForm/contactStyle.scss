@@ -20,7 +20,8 @@
   .contact-form-wrapper{
     display: block;
     .formDiv{
-      display: block;
+      display: flex;
+      flex-direction: column;
       padding:1em;
       border-radius: 20px;
       border:1px $darkBackground groove;
@@ -28,6 +29,7 @@
       margin-right:auto;
       width:50%;
       background-color: $detailColor;
+      margin-bottom: 1em;
     }
   }
 

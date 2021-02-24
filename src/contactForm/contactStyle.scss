@@ -4,9 +4,10 @@
   display: block;
   .contact-header-wrapper{
     width:100%;
-    background:linear-gradient(120deg,$darkBackground 30%, $detailColor 30%);
+    background:linear-gradient(120deg,$darkBackground 40%, $detailColor 40%);
     .contact-page-header{
       color: $detailColor;
+      margin-left: 1em;
     }
   }
   .contact-description{
@@ -22,6 +23,7 @@
     .formDiv{
       display: flex;
       flex-direction: column;
+      align-items:center;
       padding:1em;
       border-radius: 20px;
       border:1px $darkBackground groove;
@@ -30,9 +32,47 @@
       width:50%;
       background-color: $detailColor;
       margin-bottom: 1em;
+      label{
+        font-weight:bold;
+        color: $darkBackground;
+      }
+      input{
+        width:90%;
+      }
+      textarea{
+        width:90%;
+        height:20vh;
+      }
+      .formSubmit{
+        width:50%;
+      }
     }
   }
 
+
+
+
+}
+
+
+@media screen and (max-width: 800px) {
+  .contact-container{
+    .contact-header-wrapper{
+      background:linear-gradient(120deg,$darkBackground 70%, $detailColor 70%);
+      .contact-page-header{
+    font-size: 2em;
+      }
+    }
+
+    .contact-form-wrapper{
+      .formDiv{
+        width:80%;
+        textarea{
+          height:20vh;
+        }
+      }
+    }
+  }
 
 
 

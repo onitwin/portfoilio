@@ -20,7 +20,7 @@ const ContactForm=()=>{
     <br/>
 
     <label for="email">Your email</label>
-    <input type="text" id="email" required name="email">
+    <input type="email" id="email" required name="email">
     </input>
     <br/>
 

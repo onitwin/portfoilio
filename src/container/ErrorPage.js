@@ -1,10 +1,11 @@
 import React from 'react'
+import PageHeader from "../pageHeaders/PageHeader"
 
 
 const ErrorPage=()=>{
 
 return(
-  <h1>Sorry that us not a valid route</h1>
+  <PageHeader title="Error"/>
 )
 
 

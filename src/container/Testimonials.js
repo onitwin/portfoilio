@@ -1,11 +1,12 @@
 import React from "react"
+import PageHeader from "../pageHeaders/PageHeader"
 
 
 
 const Testimonials=()=>{
 
   return(
-    <h1>Hello from the testimonials page</h1>
+    <PageHeader title="Testimonials"/>
   )
 
 }

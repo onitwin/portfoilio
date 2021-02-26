@@ -1,4 +1,4 @@
-import React,{Fragment} from "react";
+import React from "react";
 import Navbar from "../newNavBar/Navbar";
 import AboutMe from "./AboutMe";
 import Contact from "./Contact";
@@ -16,7 +16,7 @@ const MainContainer=()=>{
   return(
     <div>
     <Router>
-    <Fragment>
+    <>
       <Navbar/>
       <Switch>
       <Route exact path="/" render={(props)=>{return <Home items={items}/>}}/>
@@ -28,7 +28,7 @@ const MainContainer=()=>{
       </Switch>
       <Footer/>
 
-    </Fragment>
+    </>
     </Router>
     </div>
 

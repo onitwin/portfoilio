@@ -2,14 +2,6 @@
 
 .contact-container{
   display: block;
-  .contact-header-wrapper{
-    width:100%;
-    background:linear-gradient(120deg,$darkBackground 40%, $detailColor 40%);
-    .contact-page-header{
-      color: $detailColor;
-      margin-left: 1em;
-    }
-  }
   .contact-description{
     width:80%;
     color: $detailColor;
@@ -64,13 +56,6 @@
 
 @media screen and (max-width: 800px) {
   .contact-container{
-    .contact-header-wrapper{
-      background:linear-gradient(120deg,$darkBackground 70%, $detailColor 70%);
-      .contact-page-header{
-    font-size: 2em;
-      }
-    }
-
     .contact-form-wrapper{
       .formDiv{
         width:80%;

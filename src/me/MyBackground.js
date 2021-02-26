@@ -10,13 +10,84 @@ const MyBackground=()=>{
     <div className="image-wrapper">
     <img className="sidebar-image" src ="images/me.jpeg"/>
     <figcaption className="about-tag">
-    <h5>Me</h5>
+    <h5 className="about-me-descriptor">Me</h5>
     </figcaption>
     </div>
     </div>
     <main className="article-wrap">
     <article className="about-me-text">
+    Text goes here   Text goes here
+    Text goes here   Text goes here  Text goes here
+    Text goes here  Text goes here  Text goes here
     Text goes here
+    Text goes here  Text goes here
+     Text goes here  Text goes here
+     Text goes here  Text goes here
+     Text goes here  Text goes here
+     Text goes here   Text goes here
+     Text goes here   Text goes here  Text goes here
+     Text goes here  Text goes here  Text goes here
+     Text goes here
+     Text goes here  Text goes here
+      Text goes here  Text goes here
+      Text goes here  Text goes here
+      Text goes here  Text goes here
+      Text goes here   Text goes here
+      Text goes here   Text goes here  Text goes here
+      Text goes here  Text goes here  Text goes here
+      Text goes here
+      Text goes here  Text goes here
+       Text goes here  Text goes here
+       Text goes here  Text goes here
+       Text goes here  Text goes here
+       Text goes here   Text goes here
+       Text goes here   Text goes here  Text goes here
+       Text goes here  Text goes here  Text goes here
+       Text goes here
+       Text goes here  Text goes here
+        Text goes here  Text goes here
+        Text goes here  Text goes here
+        Text goes here  Text goes here
+        Text goes here   Text goes here
+        Text goes here   Text goes here  Text goes here
+        Text goes here  Text goes here  Text goes here
+        Text goes here
+        Text goes here  Text goes here
+         Text goes here  Text goes here
+         Text goes here  Text goes here
+         Text goes here  Text goes here
+         Text goes here   Text goes here
+         Text goes here   Text goes here  Text goes here
+         Text goes here  Text goes here  Text goes here
+         Text goes here
+         Text goes here  Text goes here
+          Text goes here  Text goes here
+          Text goes here  Text goes here
+          Text goes here  Text goes here
+          Text goes here  Text goes here
+           Text goes here  Text goes here
+           Text goes here  Text goes here
+           Text goes here  Text goes here
+           Text goes here   Text goes here
+           Text goes here   Text goes here  Text goes here
+           Text goes here  Text goes here  Text goes here
+           Text goes here
+           Text goes here  Text goes here
+            Text goes here  Text goes here
+            Text goes here  Text goes here
+            Text goes here  Text goes here
+            Text goes here  Text goes here
+             Text goes here  Text goes here
+             Text goes here  Text goes here
+             Text goes here  Text goes here
+             Text goes here   Text goes here
+             Text goes here   Text goes here  Text goes here
+             Text goes here  Text goes here  Text goes here
+             Text goes here
+             Text goes here  Text goes here
+              Text goes here  Text goes here
+              Text goes here  Text goes here
+              Text goes here  Text goes here
     </article>
     </main>
     </div>

@@ -54,6 +54,7 @@ display: block;
       padding:.5em;
       overflow: scroll;
       color: $detailColor;
+      font-size: 1em;
     }
   }
 }
@@ -88,6 +89,7 @@ display: block;
       margin: unset;
       .about-me-text{
         text-align:center;
+        font-size: 1.3em;
       }
     }
   }

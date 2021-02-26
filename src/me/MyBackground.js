@@ -5,7 +5,21 @@ const MyBackground=()=>{
 
 
   return(
-    <h1>Stuff about me</h1>
+    <div className="background-page-wrapper">
+    <div className="about-me-sidebar">
+    <div className="image-wrapper">
+    <img className="sidebar-image" src ="images/me.jpeg"/>
+    <figcaption className="about-tag">
+    <h5>Me</h5>
+    </figcaption>
+    </div>
+    </div>
+    <main className="article-wrap">
+    <article className="about-me-text">
+    Text goes here
+    </article>
+    </main>
+    </div>
   )
 }
 

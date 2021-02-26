@@ -1,0 +1,57 @@
+@import '../index.scss';
+
+
+.about-me-container{
+width:100%;
+height:100%;
+display: block;
+.background-page-wrapper{
+  display: inline-flex;
+  width:100%;
+  .about-me-sidebar{
+    margin: 1em;
+    display: block;
+    width:20%;
+    height: 50vh;
+    background-color: $detailColor;
+    .image-wrapper{
+      position: relative;
+      .sidebar-image{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      background-color:$background;
+      width:100%;
+      margin-bottom: 0;
+      padding: 0;
+      }
+      .about-tag{
+        display:flex;
+        position:absolute;
+        color: $detailColor;
+        font-size:1.5em;
+        width:100%;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 2em;
+        bottom: 5%;
+      }
+    }
+
+  }
+  .article-wrap{
+    background-color: $darkBackground;
+    width:78%;
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .about-me-text{
+      border:1px solid gold;
+      width:90%;
+      height: 80%;
+      color: $detailColor;
+    }
+  }
+}
+}

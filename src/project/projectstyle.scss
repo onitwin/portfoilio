@@ -2,17 +2,6 @@
 
 .portfolio-container{
   display: block;
-  .portfolio-header-wrapper{
-    background:linear-gradient(120deg,$darkBackground 43%, $detailColor 43%);
-    width:100%;
-    display: inline-flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    .portfolio-header{
-      color:$detailColor;
-    }
-  }
   .portfolio-description{
     color: $detailColor;
     display: flex;
@@ -127,16 +116,6 @@
 
   .portfolio-container{
     display: block;
-    .portfolio-header-wrapper{
-      background:linear-gradient(120deg,$darkBackground 70%, $detailColor 70%);
-      justify-content: flex-start;
-      .portfolio-header{
-        margin-bottom:.2em;
-        padding-left: .2em;
-        font-size: 2em;
-        font-weight: bold;
-      }
-    }
     .portfolio-description{
       text-align: center;
       font-size:1.5em;

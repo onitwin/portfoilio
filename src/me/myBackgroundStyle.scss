@@ -48,6 +48,7 @@ display: block;
     align-items: center;
     height:50vh;
     .about-me-text{
+      display: block;
       border:1px solid gold;
       width:95%;
       height: 90%;
@@ -55,6 +56,15 @@ display: block;
       overflow: scroll;
       color: $detailColor;
       font-size: 1em;
+      .about-list-div{
+        display:flex;
+        flex-wrap: wrap;
+        margin-top: 2%;
+        .about-me-list{
+          width:40%;
+        }
+      }
+
     }
   }
 }
@@ -88,8 +98,18 @@ display: block;
       width:100%;
       margin: unset;
       .about-me-text{
-        text-align:center;
-        font-size: 1.3em;
+        text-align:left;
+        font-size: 1.4em;
+        .about-list-div{
+          display:flex;
+          flex-wrap: wrap;
+          margin-top: 5%;
+          .about-me-list{
+            width:100%;
+            margin: 0%;
+            text-align: left;
+          }
+        }
       }
     }
   }

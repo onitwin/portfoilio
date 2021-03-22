@@ -28,7 +28,7 @@ const ContactForm=()=>{
     <textarea  id="details" required name="message">
     </textarea>
     <br/>
-    <button className="formSubmit" type="submit">Send Message</button>
+    <button className="formSubmit" type="submit" name="submit" >Send Message</button>
 
     </form>
 

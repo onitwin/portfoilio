@@ -34,6 +34,7 @@ const MyBackground=()=>{
      <li>Vue</li>
      <li>React</li>
      <li>SQL</li>
+     <li>PHP</li>
      </ul>
      <ul className="about-me-list list-two">
      <li>Express</li>
